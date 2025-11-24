@@ -2,3 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 
+body {
+    font-family: $font-principal;
+    color: $white;
+    background-color: $black;
+}
