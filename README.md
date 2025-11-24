@@ -1,2 +1,1 @@
-# CSS-Tarea-4-Portfolio
-Cuarata tarea entregable para curso CSS de conquer blocks 
+# CSS-Tarea-3-Modern-Art-Gallery
