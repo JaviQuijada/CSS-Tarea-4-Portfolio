@@ -40,3 +40,16 @@
   }
 }
 
+@mixin button() {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-bottom: 2px solid #2bd1a3;
+  width: fit-content;
+  padding-bottom: 5px;
+  &:hover {
+    color: $green;
+}
+
+}

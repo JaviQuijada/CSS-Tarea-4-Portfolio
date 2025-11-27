@@ -1,3 +1,46 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.main_principal{
+    margin: 0px 110px 88px 110px;
+    &-language {
+        margin-bottom: 120px;
+        ul {
+            gap: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        h3 {
+            font-size: 48px;
+            color: $white;
+        }
+        p {
+            font-size: 18px;
+            color: $white;
+    
+        }
+    }
+    &-projects {
+        &-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h2 {
+            font-size: 88px;
+        }
+        &-button {
+            @include button()
+        }
+        &-content {
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+           
+            img {
+                width: 70%;
+            }
+        }
+    }
+}

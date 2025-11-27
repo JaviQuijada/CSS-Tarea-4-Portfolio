@@ -1,3 +1,87 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.principal {
+    background-image: url(../../img/circulo.svg);
+    background-repeat: no-repeat;
+    background-position: 58% 73%;
+    height: 100vh;
+    margin: 50px 110px 88px 110px;
+
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 154px;
+    &-social {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-right: 30px;
+    }
+  }
+  &_contenedor {
+    display: flex;
+    justify-content: space-between;
+    &-texto {
+      &-title {
+        font-size: 88px;
+        margin-bottom: 52px;
+        span.activate::before {
+          content: "";
+          width: 524px;
+          height: 6px;
+          position: absolute;
+          background-color: #4ee1a0;
+          right: 664px;
+          top: 440px;
+        }
+      }
+      &-subtitle {
+        font-size: 18px;
+        line-height: 30px;
+        width: 48%;
+        margin-bottom: 80px;
+      }
+      &-button {
+        @include button()
+  
+    }
+   
+
+
+    }
+    &-photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 110px;
+      z-index: -1;
+      img {
+        width: 522px;
+      }
+    }
+   
+  }
+  .line::before {
+    content: "";
+    width: 1230px;
+    height: 4px;
+    margin: 0px 110px 0px 110px;
+    position: absolute;
+    background-color: $white;
+    right: 0;
+    top: 944px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+                                                        
+

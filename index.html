@@ -29,42 +29,76 @@
 
   <body>
     <header class="principal">
-      <div class="contenedor_principal">
-        <nav class="contenedor_principal-nav">
-          <img src="img/logo.svg" alt="Logo" />
-          <ul>
-            <li>
-              <a href="#"><img src="img/social-cat.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="img/social-pick.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="img/social-linkedin.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="img/social-twitter.svg" alt="" /></a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contenedor_principal-texto">
-          <h1 class="contenedor_principal-texto-title">
+      <nav class="principal_nav">
+        <img class="principal_nav-logo" src="img/logo.svg" alt="Logo" />
+        <ul class="principal_nav-social">
+          <li>
+            <a href="#"><img src="img/social-cat.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social-pick.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social-linkedin.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/social-twitter.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="principal_contenedor">
+        <div class="principal_contenedor-texto">
+          <h1 class="principal_contenedor-texto-title">
             Nice to meet you! <br />
-            I'm Adam Keyes.
+            I'm <span class="activate">Adam Keyes</span>.
           </h1>
-          <p class="contenedor_principal-texto-subtitle">
+          <p class="principal_contenedor-texto-subtitle">
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>
-          <button class="contenedor_principal-texto-button"><a href="#">CONTACT ME</a></button>
+          <a href="#" class="principal_contenedor-texto-button">CONTACT ME</a>
+
+          </button>
         </div>
-        <div class="contenedor_principal-photo">
-          <img src="img/foto.jpg" alt="Foto">
+        <div class="principal_contenedor-photo">
+          <img src="img/foto.jpg" alt="Foto" />
         </div>
       </div>
+      <div class="line"></div>
     </header>
 
-    <main></main>
+    <main class="main_principal">
+      <section class="main_principal-language">
+        <ul>
+          <li><a href="#"><h3>HTML</h3><p>4 Years Experience</p></a></li>
+          <li><a href="#"><h3>CSS</h3><p>4 Years Experience</p></a></li>
+          <li><a href="#"><h3>Javascript</h3><p>4 Years Experience</p></a></li>
+          <li><a href="#"><h3>Accessibility</h3><p>4 Years Experience</p></a></li>
+          <li><a href="#"><h3>React</h3><p>3 Years Experience</p></a></li>
+          <li><a href="#"><h3>Sass</h3><p>3 Years Experience</p></a></li>
+        </ul>
+      </section>
+
+      <section class="main_principal-projects">
+        <div class="main_principal-projects-header">
+          <h2>Projects</h2>
+          <a href="#" class="main_principal-projects-button">CONTACT ME</a>
+        </div>
+       <div class="main_principal-projects-content">    
+        <ul>
+        <li><a href="#"><img src="./img/proyecto1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/proyecto2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/proyecto3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/proyecto4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/proyecto5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/proyecto6.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    
+      </section>
+
+    </main>
 
     <footer></footer>
   </body>
