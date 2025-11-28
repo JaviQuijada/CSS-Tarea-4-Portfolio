@@ -5,14 +5,21 @@
 .footer {
     background: $gray-dark url(../../img/aros-footer.svg) no-repeat;
     background-position: 0% 67%;
+    @include breakpoint(tablet) {
+      background-position: 0% 65%;
+      background-size: 29%;
+    }
 
     padding: 60px 7%;
     color: $white;
+    @include breakpoint(tablet) {
+      padding: 55px 11%;
+    }
     &-container {
         display: flex;
         justify-content: space-between;
         gap: 50px;
-        margin-bottom: 250px;
+        margin-bottom: 123px;
         @include breakpoint(largedesktop) {
             margin-bottom: 198px;
 
@@ -26,9 +33,13 @@
             font-size: 88px;
             margin-bottom: 20px;
             @include breakpoint(largedesktop) {
-                font-size: 126px;
-                margin-bottom: 20px;
-            }
+              font-size: 126px;
+              margin-bottom: 20px;
+          }   
+          @include breakpoint(tablet) {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
           }
             p {
             color: $white;
@@ -37,36 +48,53 @@
             max-width: 427px;
 
             @include breakpoint(largedesktop) {
-                font-size: 27px;
-                max-width: 645px;
+              font-size: 27px;
+              max-width: 645px;
+            }    
+           @include breakpoint(tablet) {
+            font-size: 13px;
+            max-width: 322px;
             }
           }
         }
         &-formulario {
             width: 500px;
             @include breakpoint(largedesktop) {
-                width: 718px;
-
-            }
+              width: 718px;
+          }   
+            @include breakpoint(tablet) {
+            width: 326px;
+            height: 280px;
+          }
             &-name, &-email, &-message {
                 font-size: 20px;
                 position: relative;
                 margin-bottom: 30px;
                 @include breakpoint(largedesktop) {
-                    font-size: 26px
-                }
+                  font-size: 26px
+              }  
+              @include breakpoint(tablet) {
+                font-size: 16px
+            }
             }
             &-button {
                 position: relative;
-                left: 490px;
+                left: 361px;
                 @include breakpoint(smalldesktop) {
                     left: 360px;
+                }
+                @include breakpoint(tablet) {
+                  left: 306px;
 
                 }
                 @include button();
                 @include breakpoint(largedesktop) {
-                    width: 227px;
-                }
+                  width: 227px;
+              }  
+              @include breakpoint(tablet) {
+                width: 111px;
+                left: 213px;
+            }
             }
         }    
   }
@@ -153,6 +181,10 @@
     @include breakpoint(smalldesktop) {
         width: 1072px;
         top: 3431px;
+    }
+    @include breakpoint(tablet) {
+      width: 816px;
+      top: 2859px;
     }
   }
   .footer_nav {

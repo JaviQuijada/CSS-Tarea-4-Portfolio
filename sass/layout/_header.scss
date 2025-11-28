@@ -13,7 +13,11 @@
   @include breakpoint(smalldesktop) {
     background-position: 51% 84%;
     margin: 50px 110px 143px 110px;
-
+  }
+  @include breakpoint(tablet) {
+    margin: 40px 50px 0px 50px;
+    background-position: 58% 66%;
+    background-size: 14vh;
   }
 
   &_nav {
@@ -22,6 +26,9 @@
     margin-bottom: 154px;
     @include breakpoint(largedesktop) {
       margin-bottom: 124px;
+    }
+    @include breakpoint(tablet) {
+      margin-bottom: 115px;
     }
 
     &-logo {
@@ -54,6 +61,10 @@
         @include breakpoint(smalldesktop) {
           font-size: 67px;
         }
+        @include breakpoint(tablet) {
+          font-size: 66px;
+          margin-bottom: 21px;
+        }
         span.activate::before {
           content: "";
           width: 524px;
@@ -71,6 +82,11 @@
             width: 405px;
             right: 655px;
             top: 395px;
+          }
+          @include breakpoint(tablet) {
+            width: 398px;
+            right: 469px;
+            top: 346px;
           }
         }
       }
@@ -96,8 +112,14 @@
       right: 0;
       margin-right: 110px;
       z-index: -1;
+      @include breakpoint(tablet) {
+        margin-right: 50px;
+      }
       img {
         width: 522px;
+        @include breakpoint(tablet) {
+          width: 400px;
+        }
       }
     }
   }
@@ -114,7 +136,11 @@
       width: 1701px;
       top: 1121px;
     }
- 
+    @include breakpoint(tablet) {
+      width: 924px;
+      margin: 0px 50px 0px 50px;
+      top: 761px;
+    }
   }
 }
 

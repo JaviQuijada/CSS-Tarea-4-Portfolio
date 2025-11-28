@@ -11,6 +11,11 @@ body {
     @include breakpoint(smalldesktop) {
         background-position: 0% 5%, 100% 33%;
     }
+    @include breakpoint(tablet) {
+        background-size: 29%;
+        background-position: -6% 5%, 111% 33%;
+
+    }
     
 
     

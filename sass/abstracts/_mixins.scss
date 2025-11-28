@@ -54,6 +54,10 @@
 }
 @include breakpoint(largedesktop) {
   width: 190px;
-  font-size: 28px;}
+  font-size: 28px;
+}
+@include breakpoint(tablet) {
+    width: 93px;
+    font-size:12px;}
 
 }

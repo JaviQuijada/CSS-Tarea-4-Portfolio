@@ -30,7 +30,10 @@
             }
             @include breakpoint(smalldesktop) {
                 font-size: 44px;
-
+            }  
+            @include breakpoint(tablet) {
+                font-size: 30px;
+                margin-bottom: 10px;
             }
         }
         p {
@@ -38,7 +41,9 @@
             color: $white;
             @include breakpoint(largedesktop) {
                 font-size: 25px;
-
+            }  
+            @include breakpoint(tablet) {
+                font-size: 12px;
             }
     
         }
@@ -49,9 +54,16 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 65px;
+            @include breakpoint(tablet) {
+                margin-bottom: 50px;
+            }
         }
         h2 {
             font-size: 88px;
+            @include breakpoint(tablet) {
+                font-size: 54px;
+
+            }
         }
         &-button {
             @include button()
@@ -62,6 +74,10 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 50px;
+                @include breakpoint(tablet) {
+                    gap:  26px;
+
+                }
             }
            
             img {
@@ -70,13 +86,20 @@
             h4 {
                 font-size: 24px;
                 color: $white;
+                @include breakpoint(tablet) {
+                    font-size: 17px;
+
+                }
             }
             p {
                 font-size: 18px;
                 color: $white;
                 word-spacing: 1em; 
+                @include breakpoint(tablet) {
+                    font-size: 12px;
+                    line-height: 38px;
 
-
+                }
             }
         }
     }
