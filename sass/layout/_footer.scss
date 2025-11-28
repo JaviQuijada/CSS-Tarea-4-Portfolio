@@ -1,2 +1,182 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+
+.footer {
+    background: $gray-dark url(../../img/aros-footer.svg) no-repeat;
+    background-position: 0% 67%;
+
+    padding: 60px 7%;
+    color: $white;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin-bottom: 250px;
+        @include breakpoint(largedesktop) {
+            margin-bottom: 198px;
+
+        } @include breakpoint(smalldesktop) {
+            margin-bottom: 136px;
+
+        }
+
+        &-text {
+            h2 {
+            font-size: 88px;
+            margin-bottom: 20px;
+            @include breakpoint(largedesktop) {
+                font-size: 126px;
+                margin-bottom: 20px;
+            }
+          }
+            p {
+            color: $white;
+            font-size: 18px;
+            line-height: 1.5;
+            max-width: 427px;
+
+            @include breakpoint(largedesktop) {
+                font-size: 27px;
+                max-width: 645px;
+            }
+          }
+        }
+        &-formulario {
+            width: 500px;
+            @include breakpoint(largedesktop) {
+                width: 718px;
+
+            }
+            &-name, &-email, &-message {
+                font-size: 20px;
+                position: relative;
+                margin-bottom: 30px;
+                @include breakpoint(largedesktop) {
+                    font-size: 26px
+                }
+            }
+            &-button {
+                position: relative;
+                left: 490px;
+                @include breakpoint(smalldesktop) {
+                    left: 360px;
+
+                }
+                @include button();
+                @include breakpoint(largedesktop) {
+                    width: 227px;
+                }
+            }
+        }    
+  }
+}
+
+.underline {
+    background: $gray-dark;
+  }
+  
+  .footer-container-formulario-name input:invalid {
+    color: $white;
+  }
+  
+  .footer-container-formulario-name input:invalid + .underline {
+    background: #ff4d4d;
+  }
+  
+  .footer-container-formulario-name input:valid + .underline {
+    background: $green;
+  }
+  
+  
+  .footer-container-formulario-email input:invalid + .underline {
+    background: #ff4d4d;
+  }
+  
+  .footer-container-formulario-email input:valid + .underline {
+    background: $green;
+  }
+  
+  .footer-container-formulario-email input:invalid ~ .error-msg {
+    display: block;
+  }
+  
+  .footer-container-formulario-email input:valid ~ .error-msg {
+    display: none;
+  }
+  
+  
+  input, textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: $white;
+    font-size: 20px;
+    padding: 5px 0;
+    @include breakpoint(largedesktop) {
+        font-size: 26px;
+    } 
+  }
+  
+  #text {
+    resize: none;
+    height: 60px;
+    @include breakpoint(largedesktop) {
+            height: 90px;
+
+    }
+  }
+  
+  .underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $green;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+  .line2::before {
+    content: "";
+    width: 1230px;
+    height: 2px;
+    margin: 0px 110px 0px 110px;
+    position: absolute;
+    background-color: $white;
+    right: 0;
+    top: 3660px;
+    @include breakpoint(largedesktop) {
+        width: 1230px;
+        top: 3660px;
+    }   
+    @include breakpoint(smalldesktop) {
+        width: 1072px;
+        top: 3431px;
+    }
+  }
+  .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+        @include breakpoint(largedesktop) {
+          width: 315px;
+        }
+      }
+    &-social {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-right: 30px;
+      img {
+        @include breakpoint(largedesktop) {
+          width: 37px;
+        }
+      }
+      
+    }
+  }
+
+  .footer_nav-social a:hover img {
+    filter: $icon-filter-green;
+  }

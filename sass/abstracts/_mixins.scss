@@ -42,14 +42,18 @@
 
 @mixin button() {
   text-decoration: none;
-  color: white;
+  color: $white;
   letter-spacing: 2px;
   font-weight: bold;
   border-bottom: 2px solid #2bd1a3;
-  width: fit-content;
+  width: auto;
+  display: inline-block; 
   padding-bottom: 5px;
   &:hover {
     color: $green;
 }
+@include breakpoint(largedesktop) {
+  width: 190px;
+  font-size: 28px;}
 
 }

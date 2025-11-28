@@ -2,21 +2,43 @@
 @use "../abstracts/mixins" as *;
 
 .principal {
-    background-image: url(../../img/circulo.svg);
-    background-repeat: no-repeat;
-    background-position: 58% 73%;
-    height: 100vh;
-    margin: 50px 110px 88px 110px;
+  background-image: url(../../img/circulo.svg);
+  background-repeat: no-repeat;
+  background-position: 58% 73%;
+  height: 100vh;
+  margin: 50px 110px 88px 110px;
+  @include breakpoint(largedesktop) {
+    background-position: 71% 60%;
+  }
+  @include breakpoint(smalldesktop) {
+    background-position: 51% 84%;
+    margin: 50px 110px 143px 110px;
+
+  }
 
   &_nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 154px;
+    @include breakpoint(largedesktop) {
+      margin-bottom: 124px;
+    }
+
+    &-logo {
+      @include breakpoint(largedesktop) {
+        width: 315px;
+      }
+    }
     &-social {
       display: flex;
       justify-content: space-between;
       gap: 30px;
       margin-right: 30px;
+      img {
+        @include breakpoint(largedesktop) {
+          width: 37px;
+        }
+      }
     }
   }
   &_contenedor {
@@ -26,6 +48,12 @@
       &-title {
         font-size: 88px;
         margin-bottom: 52px;
+        @include breakpoint(largedesktop) {
+          font-size: 147px;
+        }
+        @include breakpoint(smalldesktop) {
+          font-size: 67px;
+        }
         span.activate::before {
           content: "";
           width: 524px;
@@ -33,7 +61,17 @@
           position: absolute;
           background-color: #4ee1a0;
           right: 664px;
-          top: 440px;
+          top: 450px;
+          @include breakpoint(largedesktop) {
+            width: 883px;
+            right: 685px;
+            top: 589px;
+          }
+          @include breakpoint(smalldesktop) {
+            width: 405px;
+            right: 655px;
+            top: 395px;
+          }
         }
       }
       &-subtitle {
@@ -41,14 +79,16 @@
         line-height: 30px;
         width: 48%;
         margin-bottom: 80px;
+        @include breakpoint(largedesktop) {
+          font-size: 35px;
+          line-height: 42px;
+          width: 48%;
+          margin-bottom: 169px;
+        }
       }
       &-button {
-        @include button()
-  
-    }
-   
-
-
+        @include button();
+      }
     }
     &-photo {
       position: absolute;
@@ -60,28 +100,24 @@
         width: 522px;
       }
     }
-   
   }
   .line::before {
     content: "";
     width: 1230px;
-    height: 4px;
+    height: 2px;
     margin: 0px 110px 0px 110px;
     position: absolute;
     background-color: $white;
     right: 0;
     top: 944px;
+    @include breakpoint(largedesktop) {
+      width: 1701px;
+      top: 1121px;
+    }
+ 
   }
 }
 
-
-
-
-
-
-
-
-
-
-                                                        
-
+.principal_nav-social a:hover img {
+  filter: $icon-filter-green;
+}

@@ -9,14 +9,37 @@
             gap: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            @include breakpoint(largedesktop) {
+                gap: 50px 197px;
+
+            }  
+            @include breakpoint(smalldesktop) {
+                gap: 50px 0px;
+
+            }
+          
         }
+      
+       
         h3 {
             font-size: 48px;
             color: $white;
+            @include breakpoint(largedesktop) {
+                font-size: 64px;
+
+            }
+            @include breakpoint(smalldesktop) {
+                font-size: 44px;
+
+            }
         }
         p {
             font-size: 18px;
             color: $white;
+            @include breakpoint(largedesktop) {
+                font-size: 25px;
+
+            }
     
         }
     }
@@ -25,6 +48,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 65px;
         }
         h2 {
             font-size: 88px;
@@ -32,14 +56,27 @@
         &-button {
             @include button()
         }
-        &-content {
+        &-content { 
+            
             ul {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                gap: 50px;
             }
            
             img {
-                width: 70%;
+                width: 100%;
+            }
+            h4 {
+                font-size: 24px;
+                color: $white;
+            }
+            p {
+                font-size: 18px;
+                color: $white;
+                word-spacing: 1em; 
+
+
             }
         }
     }

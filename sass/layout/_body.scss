@@ -1,7 +1,17 @@
+@use "../abstracts/mixins" as *;
+
+
 body {
     background-image: url(../../img/aros-header.svg), url(../../img/aros-main.svg);
     background-repeat: no-repeat;
-    background-position: 0% 22%, 100% 98%;
+    background-position: 0% 5%, 100% 32%;
+    @include breakpoint(largedesktop) {
+        background-position: 0% 5%, 100% 31%;
+    }  
+    @include breakpoint(smalldesktop) {
+        background-position: 0% 5%, 100% 33%;
+    }
+    
 
     
   
