@@ -299,6 +299,11 @@ input, textarea {
     background-size: 14vh;
   }
 }
+@media (max-width: 768px) and (min-width: 415px) {
+  .principal {
+    margin: 30px 30px 88px 30px;
+  }
+}
 .principal_nav {
   display: flex;
   justify-content: space-between;
@@ -324,6 +329,11 @@ input, textarea {
   justify-content: space-between;
   gap: 30px;
   margin-right: 30px;
+}
+@media (max-width: 768px) and (min-width: 415px) {
+  .principal_nav-social {
+    margin: 0;
+  }
 }
 @media (max-width: 1920px) and (min-width: 1441px) {
   .principal_nav-social img {
@@ -352,6 +362,11 @@ input, textarea {
   .principal_contenedor-texto-title {
     font-size: 66px;
     margin-bottom: 21px;
+  }
+}
+@media (max-width: 768px) and (min-width: 415px) {
+  .principal_contenedor-texto-title {
+    width: 50%;
   }
 }
 .principal_contenedor-texto-title span.activate::before {
@@ -435,12 +450,23 @@ input, textarea {
     margin-right: 50px;
   }
 }
+@media (max-width: 768px) and (min-width: 415px) {
+  .principal_contenedor-photo {
+    margin: 0;
+    width: 42%;
+  }
+}
 .principal_contenedor-photo img {
   width: 522px;
 }
 @media (max-width: 1024px) and (min-width: 767px) {
   .principal_contenedor-photo img {
     width: 400px;
+  }
+}
+@media (max-width: 768px) and (min-width: 415px) {
+  .principal_contenedor-photo img {
+    width: 100%;
   }
 }
 .principal .line::before {
