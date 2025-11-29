@@ -20,7 +20,9 @@
     background-size: 14vh;
   }
   @include breakpoint(tabletvertical) {
-    margin: 30px 30px 88px 30px;
+    margin: 15px 30px 88px 30px;
+    height: 53vh;
+
   }
  
 
@@ -34,10 +36,16 @@
     @include breakpoint(tablet) {
       margin-bottom: 115px;
     }
+    @include breakpoint(tabletvertical) {
+      margin-bottom: 65px;
+    }
 
     &-logo {
       @include breakpoint(largedesktop) {
         width: 315px;
+      } 
+      @include breakpoint(tabletvertical) {
+        width: 158px;
       }
     }
     &-social {
@@ -51,6 +59,9 @@
       img {
         @include breakpoint(largedesktop) {
           width: 37px;
+        }  
+        @include breakpoint(tabletvertical) {
+          width: 25px;
         }
       }
     }
@@ -62,8 +73,10 @@
       &-title {
         font-size: 88px;
         margin-bottom: 52px;
+        width: 62%;
         @include breakpoint(largedesktop) {
           font-size: 147px;
+          width: 75%;
         }
         @include breakpoint(smalldesktop) {
           font-size: 67px;
@@ -74,6 +87,16 @@
         }
         @include breakpoint(tabletvertical) {
           width: 50%;
+        }
+        @include breakpoint(tabletvertical) {
+          width: 100%;
+          font-size: 68.5px;
+          line-height: 78px;
+          margin-bottom: 55px;
+        }
+        span {
+          display: block;
+
         }
 
         span.activate::before {
@@ -98,6 +121,12 @@
             width: 398px;
             right: 469px;
             top: 346px;
+          }  
+          @include breakpoint(tabletvertical) {
+            width: 408px;
+            right: 333px;
+            top: 342px;
+            height: 4px;
           }
         }
       }
@@ -106,11 +135,18 @@
         line-height: 30px;
         width: 48%;
         margin-bottom: 80px;
+        font-weight: 100;
         @include breakpoint(largedesktop) {
           font-size: 35px;
           line-height: 42px;
           width: 48%;
           margin-bottom: 169px;
+        }
+        @include breakpoint(tabletvertical) {
+          width: 64%;
+          font-size: 18px;
+          margin-bottom: 19px;
+          line-height: 26px;
         }
       }
       &-button {

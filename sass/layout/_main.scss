@@ -3,19 +3,29 @@
 
 .main_principal{
     margin: 0px 110px 88px 110px;
+    @include breakpoint(tabletvertical) {
+        margin: 0px 30px 88px 30px;
+
+    }
     &-language {
         margin-bottom: 120px;
+        @include breakpoint(tabletvertical) {
+            margin-bottom: 95px;
+
+        }
         ul {
             gap: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             @include breakpoint(largedesktop) {
                 gap: 50px 197px;
-
             }  
             @include breakpoint(smalldesktop) {
                 gap: 50px 0px;
-
+            }
+            @include breakpoint(tabletvertical) {
+                grid-template-columns: 1fr 1fr;
+                gap: 42px 0px;
             }
           
         }
@@ -34,6 +44,10 @@
             @include breakpoint(tablet) {
                 font-size: 30px;
                 margin-bottom: 10px;
+            }  
+            @include breakpoint(tabletvertical) {
+                font-size: 47px;
+                margin-bottom: 10px;
             }
         }
         p {
@@ -44,6 +58,10 @@
             }  
             @include breakpoint(tablet) {
                 font-size: 12px;
+            }  
+            @include breakpoint(tabletvertical) {
+                font-size: 18px;
+                font-weight: 100;
             }
     
         }
@@ -57,12 +75,17 @@
             @include breakpoint(tablet) {
                 margin-bottom: 50px;
             }
+            @include breakpoint(tabletvertical) {
+                margin-bottom: 35px;
+            }
         }
         h2 {
             font-size: 88px;
             @include breakpoint(tablet) {
                 font-size: 54px;
-
+            }    
+            @include breakpoint(tabletvertical) {
+                font-size: 70px;
             }
         }
         &-button {
@@ -75,7 +98,7 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 50px;
                 @include breakpoint(tablet) {
-                    gap:  26px;
+                    gap: 26px;
 
                 }
             }
