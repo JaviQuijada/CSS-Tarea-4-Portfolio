@@ -1,2 +1,11 @@
 @use "../abstracts/mixins" as *;
 
+
+
+.enlace-project  {
+    @include button();
+}
+.enlace-code {
+    @include button();
+
+}

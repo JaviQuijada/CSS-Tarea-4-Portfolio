@@ -15,3 +15,61 @@ a {
 ul {
     list-style: none;
 }
+
+//.dark {
+//    transition: 0.3s ease;
+//}
+//
+//.dark:hover, .btn-project:hover, .btn-code:hover {
+//    filter: brightness(30%);
+//    opacity: 1;
+//
+//    
+//}
+
+.imagen-project {
+    position: relative;
+}
+
+/* Imagen normal */
+.imagen-project .dark {
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* Oscurecer la imagen al hacer hover sobre el contenedor */
+.imagen-project:hover .dark {
+    filter: brightness(30%);
+}
+
+/* Enlaces ocultos al inicio */
+.enlace-project  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enlace-code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mostrar enlaces al hacer hover */
+.imagen-project:hover .enlace-project,
+.imagen-project:hover .enlace-code {
+    opacity: 1;
+}
+
