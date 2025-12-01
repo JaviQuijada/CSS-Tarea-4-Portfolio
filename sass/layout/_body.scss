@@ -16,8 +16,19 @@ body {
         background-position: -6% 5%, 111% 33%;
 
     }
-    
+    @include breakpoint(tabletvertical) {
+        background-size: 50%, 41%;
+        background-position: -32% 2%, 126% 31.6%;
 
+    }
+    @include breakpoint(mobile) {  
+        background-size: 98%, 82%;
+        background-position: -2283% 3%, 292% 29.6%;
+    }
+    @include breakpoint(mobile-xl) {  
+        background-size: 98%, 82%;
+        background-position: -2283% 3%, 292% 29.6%;
+    }
     
   
 }

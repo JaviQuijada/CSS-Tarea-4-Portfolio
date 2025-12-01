@@ -4,8 +4,20 @@
 
 .enlace-project  {
     @include button();
+    @include breakpoint(largedesktop) {
+        width: 27%;
+    }
+    @include breakpoint(tablet) {
+        width: 28%;
+    }
 }
 .enlace-code {
     @include button();
+    @include breakpoint(largedesktop) { 
+        width: 20%;
+    }
+    @include breakpoint(tablet) {
+        width: 21%;
+    }
 
 }

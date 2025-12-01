@@ -15,6 +15,23 @@
     @include breakpoint(tablet) {
       padding: 55px 11%;
     }
+    @include breakpoint(tabletvertical) {
+      padding: 55px 3%;
+      background-position: -38% 80%;
+      background-size: 42%;
+    }
+    @include breakpoint(mobile) {
+      display: block;
+      max-width: 100%;
+      background-position: -750% 66%;
+      background-size: 94%;
+  }
+  @include breakpoint(mobile-xl) {
+    display: block;
+    max-width: 100%;
+    background-position: -750% 66%;
+    background-size: 94%;
+}
     &-container {
         display: flex;
         justify-content: space-between;
@@ -27,6 +44,19 @@
             margin-bottom: 136px;
 
         }
+        @include breakpoint(tabletvertical) {
+          flex-direction: column;
+          align-items: center;
+        
+        }
+        @include breakpoint(mobile) {
+          display: block;
+          max-width: 100%;
+      }
+      @include breakpoint(mobile-xl) {
+        display: block;
+        max-width: 100%;
+    }
 
         &-text {
             h2 {
@@ -39,6 +69,19 @@
           @include breakpoint(tablet) {
             font-size: 58px;
             margin-bottom: 20px;
+        }      
+        @include breakpoint(tabletvertical) {
+          font-size: 70px;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+        @include breakpoint(mobile) {
+          text-align: center;
+          font-size: 50px;
+        }
+        @include breakpoint(mobile-xl) {
+          text-align: center;
+          font-size: 50px;
         }
           }
             p {
@@ -51,10 +94,25 @@
               font-size: 27px;
               max-width: 645px;
             }    
-           @include breakpoint(tablet) {
-            font-size: 13px;
-            max-width: 322px;
-            }
+            @include breakpoint(tablet) {
+              font-size: 13px;
+              max-width: 322px;
+              }  
+              @include breakpoint(tablet) {
+                font-size: 13px;
+                max-width: 405px;
+                text-align: center;
+                }
+                @include breakpoint(mobile) {
+                  text-align: center;
+                  font-size: 15px;
+                  margin-bottom: 50px;
+                }
+                @include breakpoint(mobile-xl) {
+                  text-align: center;
+                  font-size: 15px;
+                  margin-bottom: 50px;
+                }
           }
         }
         &-formulario {
@@ -66,6 +124,16 @@
             width: 326px;
             height: 280px;
           }
+          @include breakpoint(tabletvertical) {
+            width: 395px;
+            height: 287px;
+          }
+          @include breakpoint(mobile) {
+            width: 100%;
+          }
+          @include breakpoint(mobile-xl) {
+            width: 100%;
+          }
             &-name, &-email, &-message {
                 font-size: 20px;
                 position: relative;
@@ -74,8 +142,16 @@
                   font-size: 26px
               }  
               @include breakpoint(tablet) {
-                font-size: 16px
+                font-size: 16px;
             }
+            @include breakpoint(mobile) {
+              font-size: 16px;             
+          }
+          @include breakpoint(mobile-xl) {
+            font-size: 16px;             
+        }
+          
+          
             }
             &-button {
                 position: relative;
@@ -91,14 +167,30 @@
                 @include breakpoint(largedesktop) {
                   width: 227px;
               }  
-              @include breakpoint(tablet) {
+                @include breakpoint(tablet) {
                 width: 111px;
                 left: 213px;
+              }
+                @include breakpoint(tabletvertical) {
+                width: 140px;
+                left: 250px;
+              }
+                @include breakpoint(mobile) {
+                  width: 140px;
+                  left: 184px;
+                  font-size: 16px;
+              }
+              @include breakpoint(mobile-xl) {
+                width: 140px;
+                left: 184px;
+                font-size: 16px;
             }
             }
         }    
-  }
+    }
 }
+
+
 
 .underline {
     background: $gray-dark;
@@ -154,6 +246,12 @@
             height: 90px;
 
     }
+    @include breakpoint(mobile) {     
+          height: 88px;    
+    }
+    @include breakpoint(mobile-xl) {     
+      height: 88px;    
+}
   }
   
   .underline {
@@ -186,13 +284,49 @@
       width: 816px;
       top: 2859px;
     }
+    @include breakpoint(tabletvertical) {
+      width: 95%;
+      top: 3034px;
+      margin: 0px 20px 0px 0px;
+
+    }    
+    @include breakpoint(mobile) {
+      width: 86%;
+      top: 4834px;
+      left: 0;
+      margin: 0px 25px 0px 25px;
+      height: 1px;
+    }
+    @include breakpoint(mobile-xl) {
+      width: 86%;
+      top: 4834px;
+      left: 0;
+      margin: 0px 25px 0px 25px;
+      height: 1px;
+    }
   }
   .footer_nav {
     display: flex;
     justify-content: space-between;
+    @include breakpoint(mobile) {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    }
+    @include breakpoint(mobile-xl) {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    }
     &-logo {
         @include breakpoint(largedesktop) {
           width: 315px;
+        }
+        @include breakpoint(mobile) {
+          margin-bottom: 20px;
+        }
+        @include breakpoint(mobile-xl) {
+          margin-bottom: 20px;
         }
       }
     &-social {
@@ -200,6 +334,17 @@
       justify-content: space-between;
       gap: 30px;
       margin-right: 30px;
+      @include breakpoint(tabletvertical) {
+        margin: 0;
+      }
+      @include breakpoint(mobile) {
+        justify-content: center;
+        margin: 0;
+      }
+      @include breakpoint(mobile-xl) {
+        justify-content: center;
+        margin: 0;
+      }
       img {
         @include breakpoint(largedesktop) {
           width: 37px;

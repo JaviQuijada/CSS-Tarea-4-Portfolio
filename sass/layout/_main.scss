@@ -4,15 +4,25 @@
 .main_principal{
     margin: 0px 110px 88px 110px;
     @include breakpoint(tabletvertical) {
-        margin: 0px 30px 88px 30px;
+        margin: 0px 30px 100px 30px;
 
+    }
+    @include breakpoint(mobile) {
+        display: block;
+        max-width: 100%;
+        margin: 0px 25px 0px 25px;
+    }
+    @include breakpoint(mobile-xl) {
+        display: block;
+        max-width: 100%;
+        margin: 0px 25px 0px 25px;
     }
     &-language {
         margin-bottom: 120px;
         @include breakpoint(tabletvertical) {
             margin-bottom: 95px;
-
         }
+       
         ul {
             gap: 50px;
             display: grid;
@@ -26,6 +36,16 @@
             @include breakpoint(tabletvertical) {
                 grid-template-columns: 1fr 1fr;
                 gap: 42px 0px;
+            }
+            @include breakpoint(mobile) {
+                display: block;
+                max-width: 100%;
+                text-align: center;
+            }
+            @include breakpoint(mobile-xl) {
+                display: block;
+                max-width: 100%;
+                text-align: center;
             }
           
         }
@@ -49,6 +69,14 @@
                 font-size: 47px;
                 margin-bottom: 10px;
             }
+            @include breakpoint(mobile) {
+                font-size: 40px;
+                margin-bottom: 1px;
+            }
+            @include breakpoint(mobile-xl) {
+                font-size: 40px;
+                margin-bottom: 1px;
+            }
         }
         p {
             font-size: 18px;
@@ -63,6 +91,18 @@
                 font-size: 18px;
                 font-weight: 100;
             }
+            @include breakpoint(mobile) {
+            max-width: 100%;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            }
+            @include breakpoint(mobile-xl) {
+                max-width: 100%;
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 30px;
+                }
     
         }
     }
@@ -78,6 +118,14 @@
             @include breakpoint(tabletvertical) {
                 margin-bottom: 35px;
             }
+            @include breakpoint(mobile) {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+            @include breakpoint(mobile-xl) {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
         }
         h2 {
             font-size: 88px;
@@ -86,6 +134,12 @@
             }    
             @include breakpoint(tabletvertical) {
                 font-size: 70px;
+            }
+            @include breakpoint(mobile) {
+                font-size: 40px;
+            }
+            @include breakpoint(mobile-xl) {
+                font-size: 40px;
             }
         }
         &-button {
@@ -101,17 +155,36 @@
                     gap: 26px;
 
                 }
+                @include breakpoint(mobile) {
+                    display: block;
+                    max-width: 100%;
+                }
+                @include breakpoint(mobile-xl) {
+                    display: block;
+                    max-width: 100%;
+                }
             }
            
             img {
                 width: 100%;
+            @include breakpoint(mobile) {
+                margin-bottom: 20px;
+            }
+            @include breakpoint(mobile-xl) {
+                margin-bottom: 20px;
+            }
             }
             h4 {
                 font-size: 24px;
                 color: $white;
                 @include breakpoint(tablet) {
                     font-size: 17px;
-
+                }
+                @include breakpoint(mobile) {
+                    margin-bottom: 10px;
+                }
+                @include breakpoint(mobile-xl) {
+                    margin-bottom: 10px;
                 }
             }
             p {
@@ -121,9 +194,24 @@
                 @include breakpoint(tablet) {
                     font-size: 12px;
                     line-height: 38px;
-
+                    font-weight: 300;
+                }
+                @include breakpoint(mobile) {
+                    margin-bottom: 70px;
+                }
+                @include breakpoint(mobile-xl) {
+                    margin-bottom: 70px;
                 }
             }
+            .enlace-project, .enlace-code {
+                @include breakpoint(tabletvertical) {
+                    position: relative;
+                    display: inline;
+                    left: 0;
+                }
+               
+            }
+            
         }
     }
 }
