@@ -148,26 +148,26 @@
 
         span.activate::before {
           content: "";
-          width: 524px;
+          width: 537px;
           height: 6px;
           position: absolute;
           background-color: #4ee1a0;
-          right: 664px;
-          top: 450px;
+          right: 795px;
+          top: 676px;
           @include breakpoint(largedesktop) {
-            width: 883px;
-            right: 685px;
-            top: 589px;
+            width: 892px;
+            right: 924px;
+            top: 776px;
           }
           @include breakpoint(smalldesktop) {
             width: 405px;
-            right: 655px;
-            top: 395px;
+            right: 768px;
+            top: 483px;
           }
           @include breakpoint(tablet) {
             width: 398px;
-            right: 469px;
-            top: 346px;
+            right: 577px;
+            top: 430px;
           }
           @include breakpoint(tabletvertical) {
             width: 408px;
@@ -260,7 +260,7 @@
           margin-right: auto;
           margin-top: 109px;
           width: 50%;
-          opacity: 50%;        
+          opacity: 20%;        
 
         }
 

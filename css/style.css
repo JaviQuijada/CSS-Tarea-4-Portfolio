@@ -673,32 +673,32 @@ input, textarea {
 }
 .principal_contenedor-texto-title span.activate::before {
   content: "";
-  width: 524px;
+  width: 537px;
   height: 6px;
   position: absolute;
   background-color: #4ee1a0;
-  right: 664px;
-  top: 450px;
+  right: 795px;
+  top: 676px;
 }
 @media (max-width: 1920px) and (min-width: 1441px) {
   .principal_contenedor-texto-title span.activate::before {
-    width: 883px;
-    right: 685px;
-    top: 589px;
+    width: 892px;
+    right: 924px;
+    top: 776px;
   }
 }
 @media (max-width: 1280px) and (min-width: 1025px) {
   .principal_contenedor-texto-title span.activate::before {
     width: 405px;
-    right: 655px;
-    top: 395px;
+    right: 768px;
+    top: 483px;
   }
 }
 @media (max-width: 1024px) and (min-width: 767px) {
   .principal_contenedor-texto-title span.activate::before {
     width: 398px;
-    right: 469px;
-    top: 346px;
+    right: 577px;
+    top: 430px;
   }
 }
 @media (max-width: 768px) and (min-width: 415px) {
@@ -841,7 +841,7 @@ input, textarea {
     margin-right: auto;
     margin-top: 109px;
     width: 50%;
-    opacity: 50%;
+    opacity: 20%;
   }
 }
 .principal .line::before {
@@ -881,43 +881,39 @@ input, textarea {
 }
 
 body {
-  background-image: url(../../img/aros-header.svg), url(../../img/aros-main.svg), url(../../img/foto-recortada.png);
-  background-size: auto, auto, 0;
+  background-image: url(../../img/foto-recortada.png), url(../../img/aros-main.svg), url(../../img/aros-header.svg);
+  background-size: 0, auto, auto;
   background-repeat: no-repeat;
-  background-position: 0% 5%, 100% 32%, 0% 0%;
+  background-position: 0% 0%, 100% 32%, 0% 5%;
 }
 @media (max-width: 1920px) and (min-width: 1441px) {
   body {
-    background-position: 0% 5%, 100% 31%, 0% 0%;
-    background-size: auto, auto, 0;
+    background-position: 0% 0%, 100% 31%, 0% 5%;
+    background-size: 0, auto, auto;
   }
 }
 @media (max-width: 1280px) and (min-width: 1025px) {
   body {
-    background-position: 0% 5%, 100% 33%, 0% 0%;
-    background-size: auto, auto, 0;
+    background-position: 0% 0%, 100% 33%, 0% 5%;
+    background-size: 0, auto, auto;
   }
 }
 @media (max-width: 1024px) and (min-width: 767px) {
   body {
-    background-size: 29%;
-    background-position: -6% 5%, 111% 33%, 0% 0%;
-    background-size: auto, auto, 0;
+    background-position: 0% 0%, 111% 33%, -6% 5%;
+    background-size: 0, auto, auto;
   }
 }
 @media (max-width: 768px) and (min-width: 415px) {
   body {
-    background-size: 50%, 41%;
-    background-position: -32% 2%, 126% 31.6%, 0% 0%;
-    background-size: auto, auto, 0;
+    background-position: 0% 0%, 126% 31.6%, -32% 2%;
+    background-size: 0, auto, auto;
   }
 }
 @media (max-width: 414px) and (min-width: 320px) {
   body {
-    background-size: 98%, 82%;
-    background-position: -345% 3.5%, 292% 29.6%, 50% 3.53%;
-    z-index: 1, 1, 5;
-    background-size: 90%, auto, 50%;
+    background-position: 50% 3.53%, 292% 29.6%, -345% 3.5%;
+    background-size: 50%, auto, 90%;
   }
 }
 
