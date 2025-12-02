@@ -841,6 +841,7 @@ input, textarea {
     margin-right: auto;
     margin-top: 109px;
     width: 50%;
+    opacity: 50%;
   }
 }
 .principal .line::before {
@@ -880,38 +881,43 @@ input, textarea {
 }
 
 body {
-  background-image: url(../../img/aros-header.svg), url(../../img/aros-main.svg);
+  background-image: url(../../img/aros-header.svg), url(../../img/aros-main.svg), url(../../img/foto-recortada.png);
+  background-size: auto, auto, 0;
   background-repeat: no-repeat;
-  background-position: 0% 5%, 100% 32%;
+  background-position: 0% 5%, 100% 32%, 0% 0%;
 }
 @media (max-width: 1920px) and (min-width: 1441px) {
   body {
-    background-position: 0% 5%, 100% 31%;
+    background-position: 0% 5%, 100% 31%, 0% 0%;
+    background-size: auto, auto, 0;
   }
 }
 @media (max-width: 1280px) and (min-width: 1025px) {
   body {
-    background-position: 0% 5%, 100% 33%;
+    background-position: 0% 5%, 100% 33%, 0% 0%;
+    background-size: auto, auto, 0;
   }
 }
 @media (max-width: 1024px) and (min-width: 767px) {
   body {
     background-size: 29%;
-    background-position: -6% 5%, 111% 33%;
+    background-position: -6% 5%, 111% 33%, 0% 0%;
+    background-size: auto, auto, 0;
   }
 }
 @media (max-width: 768px) and (min-width: 415px) {
   body {
     background-size: 50%, 41%;
-    background-position: -32% 2%, 126% 31.6%;
+    background-position: -32% 2%, 126% 31.6%, 0% 0%;
+    background-size: auto, auto, 0;
   }
 }
 @media (max-width: 414px) and (min-width: 320px) {
   body {
-    background-image: url(../../img/foto-recortada.png);
     background-size: 98%, 82%;
-    background-position: -2283% 3%, 292% 29.6%;
-    z-index: 10;
+    background-position: -345% 3.5%, 292% 29.6%, 50% 3.53%;
+    z-index: 1, 1, 5;
+    background-size: 90%, auto, 50%;
   }
 }
 
