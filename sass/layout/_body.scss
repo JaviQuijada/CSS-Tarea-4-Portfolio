@@ -22,13 +22,14 @@ body {
 
     }
     @include breakpoint(mobile) {  
+        background-image: url(../../img/foto-recortada.png);
         background-size: 98%, 82%;
         background-position: -2283% 3%, 292% 29.6%;
+        z-index: 10;
     }
-    @include breakpoint(mobile-xl) {  
-        background-size: 98%, 82%;
-        background-position: -2283% 3%, 292% 29.6%;
-    }
+
     
   
 }
+
+  

@@ -69,9 +69,7 @@ ul {
     @include breakpoint(mobile) {
      margin-left: 30px;
     }
-    @include breakpoint(mobile-xl) {
-        margin-left: 30px;
-       }
+
 }
 .enlace-code, .enlace-project {
     @include breakpoint(mobile) {
@@ -81,13 +79,7 @@ ul {
         left: 0;
         bottom: 40px;       
     }
-    @include breakpoint(mobile-xl) {
-        display: inline;
-        opacity: 1;
-        position: relative;
-        left: 0;
-        bottom: 40px;       
-    }
+
 }
 
 .imagen-project:hover .enlace-project,

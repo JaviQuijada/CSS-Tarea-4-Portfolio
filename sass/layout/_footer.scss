@@ -26,12 +26,7 @@
       background-position: -750% 66%;
       background-size: 94%;
   }
-  @include breakpoint(mobile-xl) {
-    display: block;
-    max-width: 100%;
-    background-position: -750% 66%;
-    background-size: 94%;
-}
+
     &-container {
         display: flex;
         justify-content: space-between;
@@ -53,10 +48,7 @@
           display: block;
           max-width: 100%;
       }
-      @include breakpoint(mobile-xl) {
-        display: block;
-        max-width: 100%;
-    }
+
 
         &-text {
             h2 {
@@ -79,10 +71,7 @@
           text-align: center;
           font-size: 50px;
         }
-        @include breakpoint(mobile-xl) {
-          text-align: center;
-          font-size: 50px;
-        }
+
           }
             p {
             color: $white;
@@ -108,11 +97,7 @@
                   font-size: 15px;
                   margin-bottom: 50px;
                 }
-                @include breakpoint(mobile-xl) {
-                  text-align: center;
-                  font-size: 15px;
-                  margin-bottom: 50px;
-                }
+
           }
         }
         &-formulario {
@@ -131,9 +116,7 @@
           @include breakpoint(mobile) {
             width: 100%;
           }
-          @include breakpoint(mobile-xl) {
-            width: 100%;
-          }
+
             &-name, &-email, &-message {
                 font-size: 20px;
                 position: relative;
@@ -147,9 +130,7 @@
             @include breakpoint(mobile) {
               font-size: 16px;             
           }
-          @include breakpoint(mobile-xl) {
-            font-size: 16px;             
-        }
+
           
           
             }
@@ -180,11 +161,7 @@
                   left: 184px;
                   font-size: 16px;
               }
-              @include breakpoint(mobile-xl) {
-                width: 140px;
-                left: 184px;
-                font-size: 16px;
-            }
+
             }
         }    
     }
@@ -232,9 +209,7 @@ textarea:not(:placeholder-shown):invalid + .underline {
     @include breakpoint(mobile) {     
           height: 88px;    
     }
-    @include breakpoint(mobile-xl) {     
-      height: 88px;    
-}
+
   }
   
   .underline {
@@ -280,13 +255,7 @@ textarea:not(:placeholder-shown):invalid + .underline {
       margin: 0px 25px 0px 25px;
       height: 1px;
     }
-    @include breakpoint(mobile-xl) {
-      width: 86%;
-      top: 4834px;
-      left: 0;
-      margin: 0px 25px 0px 25px;
-      height: 1px;
-    }
+
   }
   .footer_nav {
     display: flex;
@@ -296,11 +265,7 @@ textarea:not(:placeholder-shown):invalid + .underline {
       max-width: 100%;
       text-align: center;
     }
-    @include breakpoint(mobile-xl) {
-      display: block;
-      max-width: 100%;
-      text-align: center;
-    }
+
     &-logo {
         @include breakpoint(largedesktop) {
           width: 315px;
@@ -308,9 +273,7 @@ textarea:not(:placeholder-shown):invalid + .underline {
         @include breakpoint(mobile) {
           margin-bottom: 20px;
         }
-        @include breakpoint(mobile-xl) {
-          margin-bottom: 20px;
-        }
+
       }
     &-social {
       display: flex;
@@ -324,10 +287,7 @@ textarea:not(:placeholder-shown):invalid + .underline {
         justify-content: center;
         margin: 0;
       }
-      @include breakpoint(mobile-xl) {
-        justify-content: center;
-        margin: 0;
-      }
+
       img {
         @include breakpoint(largedesktop) {
           width: 37px;
