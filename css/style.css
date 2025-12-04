@@ -881,7 +881,7 @@ input, textarea {
 }
 
 body {
-  background-image: url(../../img/foto-recortada.png), url(../../img/aros-main.svg), url(../../img/aros-header.svg);
+  background-image: url(../img/foto-recortada.png), url(../img/aros-main.svg), url(../img/aros-header.svg);
   background-size: 0, auto, auto;
   background-repeat: no-repeat;
   background-position: 0% 0%, 100% 32%, 0% 5%;
