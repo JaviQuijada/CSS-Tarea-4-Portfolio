@@ -102,7 +102,7 @@
 }
 
 .footer {
-  background: #242424 url(../../img/aros-footer.svg) no-repeat;
+  background: #242424 url(../img/aros-footer.svg) no-repeat;
   background-position: 0% 67%;
 }
 @media (max-width: 1024px) and (min-width: 767px) {
