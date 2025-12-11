@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 
-
 @mixin breakpoint($point) {
+  
+
   @if $point == largedesktop {
     @media (max-width: 1920px) and (min-width: 1441px) {
       @content;
@@ -16,13 +17,13 @@
     @media (max-width: 1280px) and (min-width: 1025px) {
       @content;
     }
-  }  
+  } 
   @else if $point == tablet {
     @media (max-width: 1024px) and (min-width: 767px) {
       @content;
     }
-  }
-   @else if $point == tabletvertical {
+  } 
+  @else if $point == tabletvertical {
     @media (max-width: 768px) and (min-width: 415px) {
       @content;
     }
@@ -32,8 +33,11 @@
       @content;
     }
   }
- 
-
+  @else if $point == qhd {
+    @media (max-width: 2560px) and (min-width: 1921px) {
+      @content;
+    }
+  }
 }
 
 @mixin button() {
@@ -43,30 +47,33 @@
   font-weight: bold;
   border-bottom: 1.5px solid #2bd1a3;
   width: auto;
-  display: inline-block; 
+  display: inline-block;
   padding-bottom: 5px;
   &:hover {
     color: $green;
-}
-@include breakpoint(largedesktop) {
-  width: 190px;
-  font-size: 28px;
-}
-@include breakpoint(tablet) {
-  width: 93px;
-  font-size:12px;
-}
-@include breakpoint(tabletvertical) {
-  width: 120px;
-  font-size:16px;
-}
-@include breakpoint(mobile) {
-  width: 38%;
-  font-size:17px;
-}
-@include breakpoint(mobile-xl) {
-  width: 38%;
-  font-size:17px;
-}
-
+  }
+  @include breakpoint(qhd) {
+    font-size: 63px;
+    width: 18%;
+  }
+  @include breakpoint(largedesktop) {
+    width: 190px;
+    font-size: 28px;
+  }
+  @include breakpoint(tablet) {
+    width: 93px;
+    font-size: 12px;
+  }
+  @include breakpoint(tabletvertical) {
+    width: 120px;
+    font-size: 16px;
+  }
+  @include breakpoint(mobile) {
+    width: 38%;
+    font-size: 17px;
+  }
+  @include breakpoint(mobile-xl) {
+    width: 38%;
+    font-size: 17px;
+  }
 }
