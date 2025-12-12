@@ -7,6 +7,16 @@
   background-position: 58% 73%;
   height: 100vh;
   margin: 50px 110px 88px 110px;
+  @include breakpoint(uhd) {
+    background-position: 73% 64%;
+    background-size: 18vh;
+  }
+  @include breakpoint(qhd) {
+    background-position: 67% 71%;
+
+    background-size: 18vh;
+
+  }
   @include breakpoint(largedesktop) {
     background-position: 71% 60%;
   }
@@ -65,6 +75,9 @@
       @include breakpoint(qhd) {
         width: 20%;
       }
+      @include breakpoint(uhd) {
+        width: 20%;
+      }
     }
     &-social {
       display: flex;
@@ -77,6 +90,10 @@
         margin-left: 30px;
       }
       @include breakpoint(qhd) {
+        gap: 68px;
+
+      }
+      @include breakpoint(uhd) {
         gap: 68px;
 
       }
@@ -93,6 +110,9 @@
         }
         @include breakpoint(qhd) {
           width: 60px;
+        }
+        @include breakpoint(uhd) {
+          width: 73px;
         }
       }
     }
@@ -111,6 +131,9 @@
       @include breakpoint(qhd) {
         max-width: 100%;
       }
+      @include breakpoint(uhd) {
+        max-width: 100%;
+      }
 
 
       &-title {
@@ -120,8 +143,10 @@
         @include breakpoint(qhd) {
           font-size: 150px;
           width: 64%;
-
-          
+        }
+        @include breakpoint(uhd) {
+          font-size: 258px;
+          width: 66%;
         }
         @include breakpoint(largedesktop) {
           font-size: 147px;
@@ -161,6 +186,9 @@
           @include breakpoint(qhd) {
             display: inline;
           }
+          @include breakpoint(uhd) {
+            display: inline;
+          }
         }
 
         span.activate::before {
@@ -171,6 +199,17 @@
           background-color: #4ee1a0;
           right: 795px;
           top: 676px;
+          @include breakpoint(qhd) {
+            width: 909px;
+            right: 1547px;
+            top: 650px;
+          }
+          @include breakpoint(uhd) {
+            width: 1579px;
+            right: 1737px;
+            top: 962px;
+            height: 21px;
+          }
           @include breakpoint(largedesktop) {
             width: 892px;
             right: 924px;
@@ -207,6 +246,12 @@
         margin-bottom: 80px;
         font-weight: 100;
         @include breakpoint(qhd) {
+          font-size: 52px;
+          line-height: 87px;
+          width: 62%;
+          margin-bottom: 169px;
+        }
+        @include breakpoint(uhd) {
           font-size: 52px;
           line-height: 87px;
           width: 62%;
@@ -284,6 +329,9 @@
         @include breakpoint(qhd) {
           width: 810px;
         }
+        @include breakpoint(uhd) {
+          width: 1079px;
+        }
       }
     }
   }
@@ -296,6 +344,15 @@
     background-color: $white;
     right: 0;
     top: 944px;
+    @include breakpoint(qhd) {
+      width: 2356px;
+      top: 1458px;
+    }
+    @include breakpoint(uhd) {
+      width: 3596px;
+      top: 1968px;
+      height: 6px;
+    }
     @include breakpoint(largedesktop) {
       width: 1701px;
       top: 1121px;

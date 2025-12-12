@@ -54,6 +54,14 @@
             h2 {
             font-size: 88px;
             margin-bottom: 20px;
+            @include breakpoint(qhd) {
+              font-size: 180px;
+              margin-bottom: 20px;
+          } 
+          @include breakpoint(uhd) {
+            font-size: 180px;
+            margin-bottom: 20px;
+        } 
             @include breakpoint(largedesktop) {
               font-size: 126px;
               margin-bottom: 20px;
@@ -79,6 +87,16 @@
             line-height: 1.5;
             max-width: 427px;
 
+            @include breakpoint(qhd) {
+              font-size: 35px;
+              max-width: 837px;
+              margin-bottom: 172px;
+            } 
+            @include breakpoint(uhd) {
+              font-size: 35px;
+              max-width: 837px;
+              margin-bottom: 172px;
+            } 
             @include breakpoint(largedesktop) {
               font-size: 27px;
               max-width: 645px;
@@ -102,6 +120,12 @@
         }
         &-formulario {
             width: 500px;
+            @include breakpoint(qhd) {
+              width: 649px;
+            }
+            @include breakpoint(uhd) {
+              width: 649px;
+            }
             @include breakpoint(largedesktop) {
               width: 718px;
           }   
@@ -121,13 +145,19 @@
                 font-size: 20px;
                 position: relative;
                 margin-bottom: 30px;
+                @include breakpoint(qhd) {
+                  font-size: 40px
+              } 
+              @include breakpoint(uhd) {
+                font-size: 40px
+            } 
                 @include breakpoint(largedesktop) {
                   font-size: 26px
               }  
-              @include breakpoint(tablet) {
+                @include breakpoint(tablet) {
                 font-size: 16px;
-            }
-            @include breakpoint(mobile) {
+              }
+                @include breakpoint(mobile) {
               font-size: 16px;             
           }
 
@@ -137,6 +167,7 @@
             &-button {
                 position: relative;
                 left: 361px;
+
                 @include breakpoint(smalldesktop) {
                     left: 360px;
                 }
@@ -145,6 +176,17 @@
 
                 }
                 @include button();
+                @include breakpoint(qhd) {
+                  font-size: 57px;
+                  width: 89%;
+                  left: 0;
+                }
+                @include breakpoint(uhd) {
+                  font-size: 57px;
+                  width: 89%;
+                  left: 0;
+                }
+                
                 @include breakpoint(largedesktop) {
                   width: 227px;
               }  
@@ -194,9 +236,15 @@ textarea:not(:placeholder-shown):invalid + .underline {
     color: $white;
     font-size: 20px;
     padding: 5px 0;
-    @include breakpoint(largedesktop) {
+    @include breakpoint(qhd) {
         font-size: 26px;
-    } 
+    }
+    @include breakpoint(uhd) {
+      font-size: 26px;
+  }
+    @include breakpoint(largedesktop) {
+      font-size: 26px;
+  } 
   }
   
   #text {
@@ -230,6 +278,14 @@ textarea:not(:placeholder-shown):invalid + .underline {
     background-color: $white;
     right: 0;
     top: 3660px;
+    @include breakpoint(qhd) {
+      width: 2317px;
+      top: 5957px;
+  } 
+  @include breakpoint(uhd) {
+    width: 2317px;
+    top: 5957px;
+} 
     @include breakpoint(largedesktop) {
         width: 1230px;
         top: 3660px;
@@ -267,6 +323,12 @@ textarea:not(:placeholder-shown):invalid + .underline {
     }
 
     &-logo {
+      @include breakpoint(qhd) {
+        width: 413px;
+      }
+      @include breakpoint(uhd) {
+        width: 413px;
+      }
         @include breakpoint(largedesktop) {
           width: 315px;
         }
@@ -291,6 +353,12 @@ textarea:not(:placeholder-shown):invalid + .underline {
       img {
         @include breakpoint(largedesktop) {
           width: 37px;
+        }
+        @include breakpoint(qhd) {
+          width: 59px;
+        }
+        @include breakpoint(uhd) {
+          width: 59px;
         }
       }
       
